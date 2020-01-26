@@ -17,11 +17,9 @@ There are many local animal adoption shelters in Minneapolis and other cities.  
 ## How it Works
 Transforms images into posts, with [automatic Tweeting](https://twitter.com/AnimalExample), tagging, and captioning
 ![infographic](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/infographic1.png)
-![tweet](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/tweet.png)
 Data is stored online using mongoDB, so trends can be seen
 ![catdogpiechart](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/pie.png)
-![cat_image](https://github.com/MOLLYBAS/Scratching-Post/blob/master/generated/2020-01-25%2023%3A07%3A08.558913.png)
-![dog_image](https://github.com/MOLLYBAS/Scratching-Post/blob/master/generated/2020-01-26%2000:10:27.830547.png)
+![posts](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/posts.png)
 
 ## Technologies Used
 
@@ -40,3 +38,8 @@ Data is stored online using mongoDB, so trends can be seen
 - Icons free from Iconfinder
 - Dog icon by [Icons8](https://icons8.com/icons/set/dog)
 - Domain.com used to register scratchingpost.tech for future use
+
+## Other Images
+![tweet](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/tweet.png)
+![cat_image](https://github.com/MOLLYBAS/Scratching-Post/blob/master/generated/2020-01-25%2023%3A07%3A08.558913.png)
+![dog_image](https://github.com/MOLLYBAS/Scratching-Post/blob/master/generated/2020-01-26%2000:10:27.830547.png)
