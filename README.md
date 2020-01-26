@@ -15,7 +15,7 @@ The local **communities of volunteers** often create social media posts to adver
 By helping automate content creation, posting can be done more frequently, which means that volunteers will have more time to spend taking care of animals, and more animals will be seen and have a chance at finding a new home.  This helps **foster social good and foster animals**.
 
 ## How it Works
-Transforms images into posts, with [automatic Tweeting](https://twitter.com/AnimalExample)
+Transforms images into posts, with [automatic Tweeting](https://twitter.com/AnimalExample), tagging, and captioning
 ![tweet](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/tweet.png)
 ![cat_image](https://github.com/MOLLYBAS/Scratching-Post/blob/master/generated/2020-01-25%2023%3A07%3A08.558913.png)
 ![dog_image](https://github.com/MOLLYBAS/Scratching-Post/blob/master/generated/2020-01-26%2000:10:27.830547.png)
