@@ -1,5 +1,5 @@
 # Minnehack
-![scratching post logo](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/logo.png)
+![scratching post logo](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/logo1.png)
 
 Prompt:  develop a solution for local communities to help them foster social good
 
