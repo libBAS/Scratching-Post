@@ -4,12 +4,14 @@ import pygame
 from pygame.locals import *
 from datetime import datetime
 from twython import Twython
+import pymongo
 
 from auth import (
     consumer_key,
     consumer_secret,
     access_token,
-    access_token_secret
+    access_token_secret,
+    dbpw
 )
 
 def detect_labels(path):
@@ -119,8 +121,8 @@ def display_image(img_path, text):
     pygame.image.save(screen, (filename))
     pth = "generated/" + filename
     os.rename(filename, pth)
-    print(pth)
-    print("TEST")
+    # print(pth)
+    # print("TEST")
     return pth
 
     # Event loop
@@ -171,7 +173,22 @@ def main():
 
 
     tweet(message2, img_path)
-    print(message2)
+    # print(message2)
+
+    # save to db
+    client = pymongo.MongoClient("mongodb+srv://dbUser:" + dbpw + "@cluster0-xap7m.gcp.mongodb.net/test?retryWrites=true&w=majority")
+    db = client.test
+
+    collection = db['PetDataCollection']
+    # sample data
+    if is_cat(labels):
+        document = {"Family":"Dog","Message":message2,"Path":img_path}
+        # insert document into collection
+        id = collection.insert_one(document).inserted_id
+    if is_dog(labels):
+        document = {"Family":"Cat","Message":message2,"Path":img_path}
+        # insert document into collection
+        id = collection.insert_one(document).inserted_id
 
 if __name__ == '__main__': main()
 
