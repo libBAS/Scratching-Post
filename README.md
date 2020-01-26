@@ -17,6 +17,7 @@ There are many local animal adoption shelters in Minneapolis and other cities.  
 ## How it Works
 Transforms images into posts, with [automatic Tweeting](https://twitter.com/AnimalExample), tagging, and captioning
 ![infographic](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/infographic1.png)
+For use with a [low cost IoT device](https://www.adafruit.com/product/3414?gclid=EAIaIQobChMI2piJ2eWL3AIVlIWzCh0E-gACEAQYASABEgKhn_D_BwE), or any shelter photos.
 Data is stored online using mongoDB, so trends can be seen
 ![catdogpiechart](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/pie.png)
 ![posts](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/posts.png)
