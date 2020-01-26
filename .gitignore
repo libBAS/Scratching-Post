@@ -1,2 +1,4 @@
 images/
 env/
+auth.py
+*.pyc

@@ -3,6 +3,14 @@ os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 import pygame
 from pygame.locals import *
 from datetime import datetime
+from twython import Twython
+
+from auth import (
+    consumer_key,
+    consumer_secret,
+    access_token,
+    access_token_secret
+)
 
 def detect_labels(path):
     """Detects labels in the file."""
@@ -110,6 +118,7 @@ def display_image(img_path, text):
     filename = (str(datetime.now())+".png")
     pygame.image.save(screen, (filename))
     os.rename(filename, "generated/" + filename)
+    return "generated/" + filename
 
     # Event loop
     # while 1:
@@ -134,11 +143,25 @@ def generate():
         pun = get_cat_pun(data)
     else:
         pun = get_dog_pun(data)
-    display_image(img_path, pun)
+    img_path = display_image(img_path, pun)
+    return img_path
+
+def tweet(message, img_path):
+    twitter = Twython(consumer_key, consumer_secret, access_token, access_token_secret)
+
+    image = open(img_path, 'rb')
+    response = twitter.upload_media(media=image)
+    media_id = [response['media_id']]  
+
+    twitter.update_status(status=message, media_ids=media_id)
+    print("Tweeted: %s" % message)
 
 def main():
-    for i in range(0,10):
-        generate()
+    # for i in range(0,10):
+    img_path = generate()
+    messages = ["Adopt a new friend today!","Come visit me at the shelter!","Hello human!","Avaliable for adoption:","Awe, so cute!"]
+    message = random.choice(messages)
+    tweet(message, img_path)
 
 if __name__ == '__main__': main()
 
