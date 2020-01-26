@@ -8,16 +8,18 @@ There are many local animal adoption shelters in Minneapolis and other cities.  
 
 ![map of local shelters](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/map.png)
 
-These places provide **social good** by taking care of animals and providing a companion to people who adopt these pets.  Pets can provide [health benefits](https://www.cdc.gov/healthypets/health-benefits/index.html).
+- These places provide **social good** by taking care of animals and providing a companion to people who adopt these pets.  Pets can provide [health benefits](https://www.cdc.gov/healthypets/health-benefits/index.html).
 
-The local **communities of volunteers** often create social media posts to advertise pets avaliable for adoption.
+- The local **communities of volunteers** often create social media posts to advertise pets avaliable for adoption.
 
-By helping automate content creation, posting can be done more frequently, which means that volunteers will have more time to spend taking care of animals, and more animals will be seen and have a chance at finding a new home.  This helps **foster social good and foster animals**.
+- By helping automate content creation, posting can be done more frequently, which means that volunteers will have more time to spend taking care of animals, and more animals will be seen and have a chance at finding a new home.  This helps **foster social good and foster animals**.
 
 ## How it Works
 Transforms images into posts, with [automatic Tweeting](https://twitter.com/AnimalExample), tagging, and captioning
 ![infographic](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/infographic1.png)
 ![tweet](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/tweet.png)
+Data is stored online using mongoDB, so trends can be seen
+![catdogpiechart](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/pie.png)
 ![cat_image](https://github.com/MOLLYBAS/Scratching-Post/blob/master/generated/2020-01-25%2023%3A07%3A08.558913.png)
 ![dog_image](https://github.com/MOLLYBAS/Scratching-Post/blob/master/generated/2020-01-26%2000:10:27.830547.png)
 
@@ -28,8 +30,11 @@ Transforms images into posts, with [automatic Tweeting](https://twitter.com/Anim
 - UiPath Data Scraping: to gather cat and dog puns from these websites:
 	- https://www.rover.com/blog/cat-puns/
 	- https://www.mydogsname.com/dog-puns/
+- mongoDB to store tweet data, and supply data shown using Plotly
 - Python Libraries/APIs
 	- PyGame
+	- Pymongo
+	- Plotly
 	- Twython
 	- os, random, csv, datetime
 - Icons free from Iconfinder
