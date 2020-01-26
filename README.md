@@ -26,3 +26,5 @@ Transforms images into posts
 - UiPath Data Scraping: to gather cat and dog puns from these websites:
 	- https://www.rover.com/blog/cat-puns/
 	- https://www.mydogsname.com/dog-puns/
+- PyGame: display, caption, and save images
+- Website theme:
