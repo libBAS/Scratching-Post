@@ -39,5 +39,4 @@ Data is stored online using mongoDB, so trends can be seen
 	- os, random, csv, datetime
 - Icons free from Iconfinder
 - Dog icon by [Icons8](https://icons8.com/icons/set/dog)
-- Domain.com used to register scratchingpost.tech, however site is not live yet
-- Website theme:
+- Domain.com used to register scratchingpost.tech for future use
