@@ -61,6 +61,7 @@ def get_cat_pun(data):
 
 def display_image(img_path, text):
     font_path = "./fonts/Pacifico.ttf"
+    font_size = 20
     # font_path = None
     pygame.init()
     image = pygame.image.load(img_path)
@@ -72,7 +73,7 @@ def display_image(img_path, text):
     ofs = 1
  
     if len(text) != 2:
-        font = pygame.font.Font(font_path, 30)
+        font = pygame.font.Font(font_path, font_size + 10)
         text1 = font.render(text, 1, (10, 10, 10))
         textw = font.render(text, 1, (250, 250, 250))
         textpos = text1.get_rect()
@@ -81,7 +82,7 @@ def display_image(img_path, text):
         screen.blit(textw, textposw)
         screen.blit(text1, textpos)
     else:
-        font = pygame.font.Font(font_path, 30)
+        font = pygame.font.Font(font_path, font_size)
         text1 = font.render(text[0], 1, (10, 10, 10))
         text2 = font.render(text[1], 1, (10, 10, 10))
 
@@ -129,6 +130,7 @@ def generate():
     data=list(csv.reader(csvDataFile))
 
     if is_cat(labels):
+        return # REMOVE TO INCLUDE CATS
         pun = get_cat_pun(data)
     else:
         pun = get_dog_pun(data)
