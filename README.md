@@ -21,5 +21,5 @@ By helping automate content creation, posting can be done more frequently, which
  - Google Cloud Vision API label detection: to determine if a photo contains a dog or cat
 - [Oxford-IIIT pet dataset](https://www.tensorflow.org/datasets/catalog/oxford_iiit_pet):  for testing
 - UiPath Data Scraping: to gather cat and dog puns from these websites:
-	- site 1
-	- site 2
+	- https://www.rover.com/blog/cat-puns/
+	- https://www.mydogsname.com/dog-puns/
