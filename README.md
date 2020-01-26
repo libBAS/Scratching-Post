@@ -39,7 +39,10 @@ Data is stored online using mongoDB, so trends can be seen
 - Dog icon by [Icons8](https://icons8.com/icons/set/dog)
 - Domain.com used to register scratchingpost.tech for future use
 
-## Other Images
+## Example Post
 ![tweet](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/tweet.png)
+## Captioned Images
+### Cat
 ![cat_image](https://github.com/MOLLYBAS/Scratching-Post/blob/master/generated/2020-01-25%2023%3A07%3A08.558913.png)
+## Doggo
 ![dog_image](https://github.com/MOLLYBAS/Scratching-Post/blob/master/generated/2020-01-26%2000:10:27.830547.png)
