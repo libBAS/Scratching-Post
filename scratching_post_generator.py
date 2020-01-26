@@ -117,8 +117,11 @@ def display_image(img_path, text):
     # pygame.image.save(window,"screenshot.png")
     filename = (str(datetime.now())+".png")
     pygame.image.save(screen, (filename))
-    os.rename(filename, "generated/" + filename)
-    return "generated/" + filename
+    pth = "generated/" + filename
+    os.rename(filename, pth)
+    print(pth)
+    print("TEST")
+    return pth
 
     # Event loop
     # while 1:
@@ -139,12 +142,13 @@ def generate():
     data=list(csv.reader(csvDataFile))
 
     if is_cat(labels):
-        return # REMOVE TO INCLUDE CATS
+        # return # REMOVE TO INCLUDE CATS
         pun = get_cat_pun(data)
     else:
         pun = get_dog_pun(data)
+        # return # remove to include dogs
     img_path = display_image(img_path, pun)
-    return img_path
+    return [img_path, labels]
 
 def tweet(message, img_path):
     twitter = Twython(consumer_key, consumer_secret, access_token, access_token_secret)
@@ -158,10 +162,16 @@ def tweet(message, img_path):
 
 def main():
     # for i in range(0,10):
-    img_path = generate()
+    [img_path, labels] = generate()
     messages = ["Adopt a new friend today!","Come visit me at the shelter!","Hello human!","Avaliable for adoption:","Awe, so cute!"]
     message = random.choice(messages)
-    tweet(message, img_path)
+    message2 = message
+    for u in labels:
+        message2 += " #" + str(u.description.split()[0])
+
+
+    tweet(message2, img_path)
+    print(message2)
 
 if __name__ == '__main__': main()
 
