@@ -21,7 +21,7 @@ Transforms images into posts, with [automatic Tweeting](https://twitter.com/Anim
 
 ## Technologies Used
 
- - Google Cloud Vision API label detection: to determine if a photo contains a dog or cat
+ - Google Cloud Vision API label detection: to determine if a photo contains a dog or cat, get relevant hashtags
 - [Oxford-IIIT pet dataset](https://www.tensorflow.org/datasets/catalog/oxford_iiit_pet):  for testing
 - UiPath Data Scraping: to gather cat and dog puns from these websites:
 	- https://www.rover.com/blog/cat-puns/
