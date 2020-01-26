@@ -1,7 +1,7 @@
 # Team Danger Noodles | Minnehack 2020 
 ![scratching post logo](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/logo1.png)
 
-## Purpose
+## Inspiration
 **Prompt:**  *develop a solution for local communities to help them foster social good*
 
 There are many local animal adoption shelters in Minneapolis and other cities.  Shown below are a small selection (image from [Google Maps](https://www.google.com/permissions/geoguidelines/))
@@ -14,15 +14,33 @@ There are many local animal adoption shelters in Minneapolis and other cities.  
 
 - By helping automate content creation, posting can be done more frequently, which means that volunteers will have more time to spend taking care of animals, and more animals will be seen and have a chance at finding a new home.  This helps **foster social good and foster animals**.
 
-## How it Works
+## What it Does
 Transforms images into posts, with [automatic Tweeting](https://twitter.com/AnimalExample), tagging, and captioning
+
+
+## How it Works
 ![infographic](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/infographic1.png)
 For use with a [low cost IoT device](https://www.adafruit.com/product/3414?gclid=EAIaIQobChMI2piJ2eWL3AIVlIWzCh0E-gACEAQYASABEgKhn_D_BwE), or any shelter photos.
 Data is stored online using mongoDB, so trends can be seen
 ![catdogpiechart](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/pie.png)
 ![posts](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/posts.png)
 
-## Technologies Used
+## What's next for Scratching Post
+- Build and test the hardware for a IoT Scratching Post Device
+- Species specific post text
+- Specific animal identification for including names in posts
+- Testing at a local shelter
+
+## Challenges we ran into
+- The dataset used for animal pictures had varying image sizes, which led captions to sometimes be cut off.  The font size was decreased to mitigate this issue.  With an IoT device the camera resolution would be fixed and this would not be an issue, so it was left for now.
+
+## What we learned
+- We had never used Google cloud services, mongoDB,  or the Twitter API before.  We also learned/practiced some graphic design.
+
+## Accomplishments that we're proud of
+- We were really excited when we were able to see the photos correctly classified, and are proud of how much our small and somewhat new team was able to accomplish in the time given.
+
+## How we Built it |  Technologies Used
 
  - Google Cloud Vision API label detection: to determine if a photo contains a dog or cat, get relevant hashtags
 - [Oxford-IIIT pet dataset](https://www.tensorflow.org/datasets/catalog/oxford_iiit_pet):  for testing
