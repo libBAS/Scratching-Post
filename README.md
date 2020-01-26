@@ -6,6 +6,8 @@
 
 There are many local animal adoption shelters in Minneapolis and other cities.  Shown below are a small selection (image from [Google Maps](https://www.google.com/permissions/geoguidelines/))
 
+![map of local shelters](https://github.com/MOLLYBAS/Scratching-Post/blob/master/assets/map.png)
+
 These places provide **social good** by taking care of animals and providing a companion to people who adopt these pets.  Pets can provide [health benefits](https://www.cdc.gov/healthypets/health-benefits/index.html).
 
 The local **communities of volunteers** often create social media posts to advertise pets avaliable for adoption.
