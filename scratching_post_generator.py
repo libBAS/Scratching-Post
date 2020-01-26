@@ -181,11 +181,11 @@ def main():
 
     collection = db['PetDataCollection']
     # sample data
-    if is_cat(labels):
+    if is_dog(labels):
         document = {"Family":"Dog","Message":message2,"Path":img_path}
         # insert document into collection
         id = collection.insert_one(document).inserted_id
-    if is_dog(labels):
+    if is_cat(labels):
         document = {"Family":"Cat","Message":message2,"Path":img_path}
         # insert document into collection
         id = collection.insert_one(document).inserted_id
