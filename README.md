@@ -34,4 +34,5 @@ Transforms images into posts, with [automatic Tweeting](https://twitter.com/Anim
 	- os, random, csv, datetime
 - Icons free from Iconfinder
 - Dog icon by [Icons8](https://icons8.com/icons/set/dog)
+- Domain.com used to register scratchingpost.tech, however site is not live yet
 - Website theme:
