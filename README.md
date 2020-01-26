@@ -31,4 +31,5 @@ Transforms images into posts, with [automatic Tweeting](https://twitter.com/Anim
 	- PyGame
 	- Twython
 	- os, random, csv, datetime
+- Icons free from Iconfinder
 - Website theme:
