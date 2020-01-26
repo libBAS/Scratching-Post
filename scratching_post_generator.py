@@ -105,19 +105,18 @@ def display_image(img_path, text):
         screen.blit(text2w, textposw2)
 
     pygame.display.flip()
-    print("HERE")
     # pygame.image.save(window,"screenshot.png")
-    filename = (str(datetime.now())+".jpeg")
-    pygame.image.save(self.screen, (filename))
+    filename = (str(datetime.now())+".png")
+    pygame.image.save(screen, (filename))
     os.rename(filename, "generated/" + filename)
 
     # Event loop
-    while 1:
-        for event in pygame.event.get():
-            if event.type == QUIT:
-                return
+    # while 1:
+    #     for event in pygame.event.get():
+    #         if event.type == QUIT:
+    #             return
 
-def main():
+def generate():
     path = random.choice(os.listdir("./images/images"))
     img_path = "./images/images/" + path
     labels = detect_labels(img_path)
@@ -135,6 +134,9 @@ def main():
         pun = get_dog_pun(data)
     display_image(img_path, pun)
 
+def main():
+    for i in range(0,10):
+        generate()
 
 if __name__ == '__main__': main()
 

@@ -2,7 +2,6 @@ import os, random, csv, random
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 import pygame
 from pygame.locals import *
-from datetime import datetime
 
 def detect_labels(path):
     """Detects labels in the file."""
@@ -105,11 +104,6 @@ def display_image(img_path, text):
         screen.blit(text2w, textposw2)
 
     pygame.display.flip()
-    print("HERE")
-    # pygame.image.save(window,"screenshot.png")
-    filename = (str(datetime.now())+".jpeg")
-    pygame.image.save(self.screen, (filename))
-    os.rename(filename, "generated/" + filename)
 
     # Event loop
     while 1:
