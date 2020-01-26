@@ -10,7 +10,7 @@ There are many local animal adoption shelters in Minneapolis and other cities.  
 
 - These places provide **social good** by taking care of animals and providing a companion to people who adopt these pets.  Pets can provide [health benefits](https://www.cdc.gov/healthypets/health-benefits/index.html).
 
-- The local **communities of volunteers** often create social media posts to advertise pets avaliable for adoption.
+- The local **communities of volunteers** often create social media posts to advertise pets avaliable for adoption.  However, shelters are consistently [short on volunteers](https://www.wiscnews.com/wisconsindellsevents/news/local/volunteers-make-the-difference-animal-shelters-rely-on-support/article_3189845b-04ea-57cf-90df-2a48b279ddae.html).
 
 - By helping automate content creation, posting can be done more frequently, which means that volunteers will have more time to spend taking care of animals, and more animals will be seen and have a chance at finding a new home.  This helps **foster social good and foster animals**.
 
